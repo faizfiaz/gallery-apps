@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="itemViewModel"
+            type="com.gallery.apps.ui.home.adapter.HomeMenuViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/BUTwoThirds"
+        android:layout_marginTop="@dimen/BU"
+        android:layout_marginEnd="@dimen/BUTwoThirds">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_image"
+            imagePath="@{itemViewModel.image}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/BU10"
+            android:onClick="@{() ->itemViewModel.seeThumbnail()}"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    </FrameLayout>
+
+
+</layout>

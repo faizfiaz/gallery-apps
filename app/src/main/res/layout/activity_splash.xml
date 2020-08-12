@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/BU5"
+        android:layout_height="@dimen/BU5"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        style="@style/TextAppearance.Text.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:padding="@dimen/BU"
+        android:text="Gallery Apps - Version 1.0.0"
+        android:textSize="@dimen/font_size_small" />
+</FrameLayout>
